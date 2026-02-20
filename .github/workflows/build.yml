@@ -24,7 +24,7 @@ jobs:
         run: cd chatfilter && ./gradlew build --no-daemon
 
       - name: Upload mod JAR
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: chatfilter-mod
           path: chatfilter/build/libs/chatfilter-*.jar
