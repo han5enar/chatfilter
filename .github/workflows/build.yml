@@ -17,11 +17,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x chatfilter/gradlew
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Build with Gradle
-        run: cd chatfilter && ./gradlew build --no-daemon
+        run: cd chatfilter && gradle build --no-daemon
 
       - name: Upload mod JAR
         uses: actions/upload-artifact@v4
