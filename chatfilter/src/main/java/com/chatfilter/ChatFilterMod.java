@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
 import net.minecraft.text.Text;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
-import net.minecraft.text.LiteralTextContent;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
